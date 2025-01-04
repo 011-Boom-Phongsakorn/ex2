@@ -53,7 +53,7 @@ class Circle extends Shape{
     }
 
     public toString():string{
-        return ``
+        return `Circle [Shape[color:${this.getColor}, filled=]]`
     }
 }
 
