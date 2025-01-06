@@ -2,6 +2,7 @@ const { Author, Book } = require('./Ex1')
 const { Customer, Invoice } = require('./Ex2')
 const { Person, Student, Staff } = require('./Ex3')
 const { DiscountRate, Customers, Visit } = require('./Ex5')
+const { Shape, Circle, Rectangle, Square} = require('./Ex4')
 
 console.log('############## Ex1 ##############')
 
@@ -41,6 +42,21 @@ console.log(staff1.toString())
 console.log('#################################')
 
 console.log('############## Ex4 ##############')
+const shape = new Shape("Red", true)
+console.log(shape.toString()) 
+
+const circle = new Circle("Blue", false, 5)
+console.log(circle.toString()) 
+console.log(`Area of Circle: ${circle.getArea()}`) 
+console.log(`Perimeter of Circle: ${circle.getPerimeter()}`) 
+
+const rectangle = new Rectangle("Green", true, 4, 6)
+console.log(rectangle.toString()) 
+console.log(`Area of Rectangle: ${rectangle.getArea()}`) 
+const square = new Square(4, "Yellow", true)
+console.log(square.toString()) 
+console.log(`Area of Square: ${square.getArea()}`) 
+console.log(`Perimeter of Square: ${square.getPerimeter()}`) 
 console.log('#################################')
 
 console.log('############## Ex5 ##############')

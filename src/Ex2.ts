@@ -5,7 +5,7 @@ class Customer {
 
     constructor(id: number, name: string, discount: number){
         this.id = id
-        this.name= name
+        this.name = name
         this.discount = discount
     }
 
